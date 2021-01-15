@@ -98,7 +98,7 @@ pub fn getVal_A(name: &str) -> Vec<Vec<String>>{
         for cap in match_M.captures_iter(&x) {
             
             msv.push( cap[3].to_string());
-            println!("As:{}",cap[3].to_string());
+            //println!("As:{}",cap[3].to_string());
             
             
             
