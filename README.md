@@ -27,3 +27,14 @@ you dont need to make your own dataBook as it can be found in rustDatabook::data
   
 How to use find value  
  findValue(&str,&dataBook,&str) -> usize first str is the name of the value and the second str is what type so _A _M _D  
+
+How to change data:
+changeData(&str &str &str): name of the file, the new data, the name of the data aka |changethisdata_M|
+
+How to add Data:
+addData(&str &str): name of the file, the new data in this format |name+(type)|added data
+
+remove data:
+removeData(&str,&str): name of the file, name of the data
+
+after changeing  data you need to re parse the file
