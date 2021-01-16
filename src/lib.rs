@@ -10,6 +10,15 @@ pub fn rdbData(name:&str) -> dataBook{
 pub fn findValue(name: &str, xs: &dataBook,typ: &str) -> usize{
     return findValueB(name, xs, typ)
 }
+pub fn addData(name:&str,newdata:&str){
+    rdbhandeling::addData(name, newdata)
+}
+pub fn changeData(name:&str,newdata:&str,cname:&str){
+    rdbhandeling::changeData(name, newdata,cname)
+}
+pub fn removeData(name:&str,newdata:&str){
+    rdbhandeling::removeData(name, newdata)
+}
 pub struct dataBook{
     pub NM:Vec<String>,
     pub ND:Vec<String>,
@@ -34,6 +43,7 @@ pub struct dataBook{
     return XX;
 }
 fn findValueB(name: &str, xs: &dataBook,typ: &str) -> usize{
+    // the if type checks what type and it then goes on to finding the dataname
     if typ == "_D"{
         for x in 0..xs.ND.len(){
             if xs.ND[x] == name.to_string(){
