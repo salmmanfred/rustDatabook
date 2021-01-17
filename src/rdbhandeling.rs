@@ -63,7 +63,7 @@ pub fn getVal_ND(file: &str) -> Vec<String>{
         
         for cap in match_M.captures_iter(&x) {
             
-            msv.push( cap[3].to_string());
+            msv.push(cap[3].to_string());
             
             
         }
@@ -83,7 +83,7 @@ pub fn getVal_MN(name: &str) -> Vec<String>{
         
         for cap in match_M.captures_iter(&x) {
             
-            msv.push( cap[2].to_string());
+            msv.push(cap[2].to_string());
             
             
         }
@@ -155,45 +155,7 @@ pub fn getVal_AN(name: &str) -> Vec<String>{
 
     return msv;
     
-}/*
-pub fn findValue(name: &str, xs: &dataBook,typ: &str) -> usize{
-    if typ == "_D"{
-        for x in 0..xs.ND.len(){
-            if xs.ND[x] == name.to_string(){
-                return x;
-            } 
-        }
-    }else if typ == "_M"{
-        for x in 0..xs.N.len(){
-            if xs.N[x] == name.to_string(){
-                return x;
-            } 
-        }
-    }else if typ == "_A"{
-        for x in 0..xs.AN.len(){
-            if xs.AN[x] == name.to_string(){
-                return x;
-            } 
-        }
-    }
-    
-    return 0;
 }
-
-pub fn returner(name: &str) -> dataBook{
-    
-    let  XX:dataBook = dataBook{
-        N : getVal_MN(name),
-        ND : getVal_ND(name),
-        D : getVal_D(name),
-        M : getVal_M(name),
-        A : getVal_A(name),
-        AN: getVal_AN(name)
-        
-    
-    };
-    return XX;
-}*/
 
 
 pub fn addData(name: &str,newdata:&str){
