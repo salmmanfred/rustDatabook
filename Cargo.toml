@@ -10,5 +10,5 @@ description = "A system for accessing data in a rdb file"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-openfile = "1.0.0"
+openfile = "1.0.1"
 regex = "1"

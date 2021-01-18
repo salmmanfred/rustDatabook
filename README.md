@@ -35,7 +35,7 @@ you dont need to make your own dataBook as it can be found in rustDatabook::data
 
  findValue(&str,&dataBook,&str) -> usize first str is the name of the value and the second str is what type so _A _M _D  
 
-#3 How to change data:
+## How to change data:
 
 changeData(&str &str &str): name of the file, the new data, the name of the data aka |changethisdata_M|
 
