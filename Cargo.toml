@@ -1,6 +1,6 @@
 [package]
 name = "rustDatabook"
-version = "1.1.1"
+version = "1.1.2"
 authors = ["TheSlam <32799244+salmmanfred@users.noreply.github.com>"]
 edition = "2018"
 readme = "README.md"
@@ -10,5 +10,5 @@ description = "A system for accessing data in a rdb file"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-openfile = "0.2.1"
+openfile = "1.0.0"
 regex = "1"
