@@ -169,6 +169,7 @@ pub fn addData(name: &str,newdata:&str){
     }
     let x = openfile::writeFile(name, &datax);
 }
+
 pub fn changeData(name: &str, newdata:&str, cname:&str){
     let mut data = openfile::readFileLines(name);
     data.push(newdata.to_owned());

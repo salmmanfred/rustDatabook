@@ -66,3 +66,27 @@ fn findValueB(name: &str, xs: &dataBook,typ: &str) -> usize{
     
     return 0;
 }
+pub fn copyValueToNew(name:&str,newName:String, copyName:&str,xx: dataBook,typ:&str){
+    let mut x: String = "".to_string();
+    if typ == "_M"{
+        
+        x = "|".to_owned()+&newName+&"_M|".to_owned()+&xx.M[findValue(copyName, &xx, "_M")];
+
+    }
+    if typ == "_D"{
+        
+        x = "|".to_owned()+&newName+&"_D|".to_owned()+&xx.D[findValue(copyName, &xx, "_D")].to_string();
+
+    }
+    if typ == "_A"{
+        let mut xf: String = "".to_string();
+
+        for x in &xx.A[findValue(copyName, &xx, "_A")]{
+            let xo = x.to_owned()+",";
+            xf.push_str(&xo);
+        }
+        x = "|".to_owned()+&newName+&"_A|".to_owned()+&xf;
+
+    }
+    rdbhandeling::addData(name, &x)
+}
