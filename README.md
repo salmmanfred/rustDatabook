@@ -51,4 +51,4 @@ after changeing  data you need to re parse the file
   
 ## How to use copyValueToNew: 
 
-copyValueToNew(name:&str,newName:String, copyName:&str,xx: dataBook,typ:&str): name of the file, name of the new data which is going to be added  , name of the data you will be copying, the databook, type if it is _M _A or _D  
+copyValueToNew(name:&str,newName:&str, copyName:&str,xx: dataBook,typ:&str): name of the file, name of the new data which is going to be added  , name of the data you will be copying, the databook, type if it is _M _A or _D  
