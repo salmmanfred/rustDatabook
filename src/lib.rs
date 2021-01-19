@@ -66,7 +66,7 @@ fn findValueB(name: &str, xs: &dataBook,typ: &str) -> usize{
     
     return 0;
 }
-pub fn copyValueToNew(name:&str,newName:String, copyName:&str,xx: dataBook,typ:&str){
+pub fn copyValueToNew(name:&str,newName:&str, copyName:&str,xx: dataBook,typ:&str){
     let mut x: String = "".to_string();
     if typ == "_M"{
         
